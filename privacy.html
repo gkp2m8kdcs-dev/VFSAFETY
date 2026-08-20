@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+<meta name="theme-color" content="#0B0F1A" />
+<title>Privacy & Disclaimers — The Values Auction House</title>
+<meta name="description" content="How The Values Auction House handles your data, what it does and does not collect, and the limits of its self-reflection exercise." />
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230B0F1A'/%3E%3Cpath d='M32 12 L40 28 L56 30 L44 42 L48 58 L32 50 L16 58 L20 42 L8 30 L24 28 Z' fill='%23D8B26B'/%3E%3C/svg%3E" />
+<link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body>
+
+<main class="page-hero">
+  <div class="container">
+    <span class="eyebrow">Privacy & Disclaimers</span>
+    <h1>Privacy & <em>Disclaimers</em>.</h1>
+    <p class="lede">How your data is handled, and what this exercise is — and isn't.</p>
+  </div>
+</main>
+
+<article class="article">
+
+  <nav class="toc" aria-label="On this page">
+    <h4>On this page</h4>
+    <ol>
+      <li><a href="#summary">Summary</a></li>
+      <li><a href="#privacy">Privacy</a></li>
+      <li><a href="#permissions">Permissions</a></li>
+      <li><a href="#disclaimer">Disclaimer</a></li>
+      <li><a href="#children">Children's Privacy</a></li>
+      <li><a href="#changes">Changes to this Policy</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ol>
+  </nav>
+
+  <h2 id="summary">Summary</h2>
+  <p>The Values Auction House (<strong>"the App"</strong>) is designed around one principle: <strong>your reflections stay on your device</strong>. By default, we collect nothing, transmit nothing, and operate no account system. The App makes no background network requests and integrates no advertising SDKs, analytics, or fingerprinting libraries.</p>
+  <p>This page explains that in detail, plus the disclaimers that matter for a self-reflection exercise.</p>
+
+  <h2 id="privacy">Privacy</h2>
+
+  <h3>What we collect</h3>
+  <p>Nothing leaves your device by default. Specifically, the App does not collect, transmit, or store on any server:</p>
+  <ul>
+    <li>Your bids, holdings, journal entries, or reflections.</li>
+    <li>Identifiers such as your Apple ID, advertising ID (IDFA), device fingerprint, or IP address.</li>
+    <li>Crash logs tied to your identity. Anonymous diagnostics may be enabled by you via iOS Settings.</li>
+  </ul>
+
+  <h3>Where your data lives</h3>
+  <ul>
+    <li><strong>On-device only.</strong> Your portfolio and reflections are written to the App's local sandboxed storage and to the encrypted iOS backup of your device.</li>
+    <li><strong>iCloud Backup (optional).</strong> If you have iCloud Backup turned on for this device, a copy of that local data may be included in your encrypted iCloud backup. It remains encrypted at rest and is never accessible to us.</li>
+    <li><strong>Reset wipes everything.</strong> Tapping <em>Reset Portfolio</em> in Settings returns the App to a clean slate, including all locally stored portfolio data. Uninstalling the App removes its local storage entirely.</li>
+  </ul>
+
+  <h3>Photos &amp; camera</h3>
+  <ul>
+    <li>If you choose an avatar or save a shareable report, the image is written to your local Photos library <strong>only</strong> when you explicitly tap <em>Save</em>.</li>
+    <li>The App never accesses the camera or photo library in the background, and never reads photos you did not select yourself.</li>
+  </ul>
+
+  <h3>System APIs we use</h3>
+  <p>The App uses a small set of system APIs for purely local purposes. These are disclosed in our app bundle's <code>PrivacyInfo.xcprivacy</code> manifest:</p>
+  <ul>
+    <li><code>NSPrivacyAccessedAPICategoryUserDefaults</code> — to remember your settings (theme, last opened lot, etc.). Reason code <code>CA92.1</code>.</li>
+    <li><code>NSPrivacyAccessedAPICategoryFileTimestamp</code> — to record when you acquired each holding. Reason code <code>C617.1</code>.</li>
+    <li><code>NSPrivacyAccessedAPICategorySystemBootTime</code> — to schedule local notifications correctly across reboots. Reason code <code>35F9.1</code>.</li>
+  </ul>
+  <p>None of these calls transmit data off-device.</p>
+
+  <h3>Third parties</h3>
+  <ul>
+    <li>No third-party analytics, advertising, or attribution SDKs are integrated.</li>
+    <li>No social-network logins, no sign-in with Apple, no email account is required.</li>
+    <li>The only network calls in the entire App are initiated by you from the in-app <em>Support</em> view, to open a mail or web link you chose.</li>
+  </ul>
+
+  <h3>Children</h3>
+  <p>The App is rated 4+ and contains no targeted advertising or third-party tracking. We do not knowingly collect personal information from anyone, including children under 13 (or the equivalent age in your jurisdiction). Because we collect nothing at all, this requirement is satisfied by design.</p>
+
+  <h3>If a future version adds cloud sync</h3>
+  <p>If we ever introduce optional cloud sync, account features, or sharing, we will:</p>
+  <ul>
+    <li>Ask for your explicit, in-app consent before any data leaves your device.</li>
+    <li>Update this page and the App Store listing before the feature ships.</li>
+    <li>Give you a one-tap way to disable the feature and delete any synced copy.</li>
+  </ul>
+
+  <hr/>
+
+  <h2 id="permissions">Permissions</h2>
+  <p>iOS may prompt you for the following permissions, <strong>only</strong> when you take the corresponding action:</p>
+  <ul>
+    <li><strong>Photo Library (write)</strong> — to save a shareable report image when you choose <em>Save Report to Photos</em>.</li>
+    <li><strong>Notifications</strong> — if you opt in to gentle reminders to revisit your reflection. You can decline and the App works fully without them.</li>
+  </ul>
+  <p>You can review and revoke any granted permission anytime in iOS Settings → VFSAFETY.</p>
+
+  <hr/>
+
+  <h2 id="disclaimer">Disclaimer</h2>
+  <p>The Values Auction House is a <strong>self-reflection exercise</strong>, not a clinical, financial, or psychological assessment.</p>
+  <ul>
+    <li><strong>Not medical or mental-health advice.</strong> The reflections, insights, and chart summaries are educational prompts. They are not a diagnosis, treatment plan, or substitute for professional care. If something surfaces that feels heavy, please reach out to a qualified professional or someone you trust.</li>
+    <li><strong>Not financial advice.</strong> "Capital", "lots", and "clearing prices" are metaphors. Nothing in this App constitutes investment, tax, or legal guidance.</li>
+    <li><strong>No warranty.</strong> The App is provided "as is" without warranty of any kind, express or implied. The developers disclaim all liability for any decisions made based on the App's output.</li>
+    <li><strong>Your responsibility.</strong> How you interpret and act on your reflections is your own.</li>
+  </ul>
+
+  <hr/>
+
+  <h2 id="changes">Changes to this Policy</h2>
+  <p>We may update this page as the App evolves. Material changes will be reflected by an updated "Last updated" date below and, where required, an in-app notice on next launch.</p>
+  <p><strong>Last updated:</strong> August 20, 2026.</p>
+
+  <hr/>
+
+  <h2 id="contact">Contact</h2>
+  <p>Questions, feedback, or a privacy request? Email the developer at <a href="mailto:support@vfsafety.app">support@vfsafety.app</a> — we read every message.</p>
+  <p>For the App's support resources, see <a href="support.html">Support</a>. For the legal terms governing your use of the App, see <a href="terms.html">Terms of Use</a>.</p>
+
+</article>
+
+<script src="assets/nav.js"></script>
+</body>
+</html>
